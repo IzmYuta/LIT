@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'post/**'
+    paths-ignore:
+      - '.github/**'
 jobs:
   dispatch-target-updated:
     strategy:
